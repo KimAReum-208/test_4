@@ -1,12 +1,14 @@
 import javax.swing.*;
+import javax.swing.event.*;
 import java.awt.*;
+import java.awt.event.*;
 /**
  * 여기에 MtPanel 클래스 설명을 작성하십시오.
  * 
  * @author (작성자 이름) 
  * @version (버전번호나 날짜)
  */
-public class MyPanel extends JPanel
+public class MyPanel extends JPanel implements ActionListener
 {
     public JTextField tfName, tfDept, tfAddress;
     public JLabel mlName, mlDept, mlAddress, mlSchoolYear;
@@ -41,5 +43,20 @@ public class MyPanel extends JPanel
         this.add(mb);
         this.add(mbClear);
         this.add(sp);
+    }
+    public void actionPerformed(ActionEvent e){
+        JButton jb = (JButton)e.getSource();
+        if (jb.getText().equals("추가")){
+            String str = ta.getText();
+            str += "이름: "+tfName.getText()+"\n";
+            str += "학과: "+tfDept.getText()+"\n";
+            str += "학년: "+ cbSchoolYear.getSelectedItem()+"\n";
+            str += "주소: "+ tfAddress.getText()+"\n";
+            str += "-------------------------------------------"+"\n";
+            
+            ta.setText(str);
+        }
+        else{
+        }
     }
 }
