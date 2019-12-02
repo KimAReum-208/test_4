@@ -1,9 +1,9 @@
 import javax.swing.*;
 /**
- * 여기에 TextFieldFrame 클래스 설명을 작성하십시오.
+ * MyPanel을 담고있는 프레임 클래스.
  * 
- * @author (작성자 이름) 
- * @version (버전번호나 날짜)
+ * @author (2017315002 김아름, 2018315036 양유석, 2018315033 태영준) 
+ * @version (2019.12.02)
  */
 public class TextFieldFrame extends JFrame
 {
