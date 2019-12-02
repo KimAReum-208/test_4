@@ -9,8 +9,8 @@ public class TextFieldFrame extends JFrame
 {
     public MyPanel mp;
     public TextFieldFrame(){
-        this.setSize(250, 200);
-        this.setTitle("텍스트필드 만들기");
+        this.setSize(270, 350);
+        this.setTitle("실습_4");
         
         mp = new MyPanel();
         this.add(mp);
