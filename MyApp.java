@@ -1,8 +1,8 @@
 
 /**
- * 여기에 MyApp 클래스 설명을 작성하십시오.
+ * main 메소드를 작성한 클래스
  * 
- * @author (작성자 이름) 
+ * @author (2017315002 김, 2018315036, ) 
  * @version (버전번호나 날짜)
  */
 public class MyApp
