@@ -1,3 +1,4 @@
+
 import javax.swing.*;
 import javax.swing.event.*;
 import java.awt.*;
@@ -32,6 +33,9 @@ public class MyPanel extends JPanel implements ActionListener
         mb = new JButton("추가");
         mbClear = new JButton("Clear");
         
+        mb.addActionListener(this);
+        mbClear.addActionListener(this);
+        
         this.add(mlName);
         this.add(tfName);
         this.add(mlDept);
@@ -42,7 +46,7 @@ public class MyPanel extends JPanel implements ActionListener
         this.add(cbSchoolYear);
         this.add(mb);
         this.add(mbClear);
-        this.add(sp);
+        this.add(sp);                
     }
     public void actionPerformed(ActionEvent e){
         JButton jb = (JButton)e.getSource();
@@ -57,6 +61,10 @@ public class MyPanel extends JPanel implements ActionListener
             ta.setText(str);
         }
         else{
+            tfName.setText("");
+            tfDept.setText("");
+            tfAddress.setText("");
+            ta.setText("");
         }
     }
 }

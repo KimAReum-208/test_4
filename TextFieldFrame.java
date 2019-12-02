@@ -17,5 +17,6 @@ public class TextFieldFrame extends JFrame
         
         this.setVisible(true);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+              
     }
 }
